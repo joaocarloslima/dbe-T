@@ -2,11 +2,11 @@ package loja.desconto;
 
 import java.math.BigDecimal;
 
-import loja.Pedido;
+import loja.PedidoInterface;
 
 public class CalculadoraDeDesconto {
 	
-	public BigDecimal calcular(Pedido pedido) {
+	public BigDecimal calcular(PedidoInterface pedido) {
 		
 		Desconto cadeiaDeDesconto = 
 				new DescontoPorQuantidade(

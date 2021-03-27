@@ -3,7 +3,7 @@ package loja;
 public class EmailListener implements Listener{
 
 	@Override
-	public void update(Pedido pedido) {
+	public void update(PedidoInterface pedido) {
 		System.out.println("Enviando email...");	
 	}
 

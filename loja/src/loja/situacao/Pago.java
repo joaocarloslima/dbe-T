@@ -1,6 +1,6 @@
 package loja.situacao;
 
-import loja.Pedido;
+import loja.PedidoInterface;
 
 public class Pago extends Situacao {
 
@@ -11,12 +11,12 @@ public class Pago extends Situacao {
 	}
 
 	@Override
-	public void entregar(Pedido pedido) {
+	public void entregar(PedidoInterface pedido) {
 		pedido.setSituacao(new Entregue());
 	}
 
 	@Override
-	public void cancelar(Pedido pedido) {
+	public void cancelar(PedidoInterface pedido) {
 		pedido.setSituacao(new Cancelado());
 	}
 	
