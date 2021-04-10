@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<installed>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.furnace.container:simple" version="2.28.5.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:facets" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:resources" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.furnace.container:cdi" version="2.28.5.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:configuration" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:convert" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:dependencies" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:environment" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:ui-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:ui" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:projects" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:projects-generic" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:shell-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:text" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:parser-java" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:shell" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:script" version="3.9.8.Final"/>
+  <addon api-version="" name="org.jboss.forge.addon:slf4j" version="1.7.13"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:git" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:parser-xml" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:dev-tools-java" version="3.9.8.Final"/>
+  <addon api-version="" name="org.jboss.forge.addon:javaee-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:bean-validation" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:templates-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:templates" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:rest-client" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:javaee" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:scaffold-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:scaffold" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:parser-yaml" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:scaffold-faces" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:testing" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:parser-json" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:maven" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:addons" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:addon-manager-spi" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:addon-manager" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:database-tools" version="3.9.8.Final"/>
+  <addon api-version="2.28.5.Final" name="org.jboss.forge.addon:core" version="3.9.8.Final"/>
+  <addon api-version="2.23.5.Final" name="org.jboss.forge.addon:angularjs" version="2.1.7.Final"/>
+</installed>

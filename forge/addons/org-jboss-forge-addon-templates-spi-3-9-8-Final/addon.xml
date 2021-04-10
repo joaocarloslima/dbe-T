@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<addon>
+  <dependencies>
+    <dependency export="true" name="org.jboss.forge.addon:resources" optional="false" version="3.9.8.Final"/>
+  </dependencies>
+</addon>

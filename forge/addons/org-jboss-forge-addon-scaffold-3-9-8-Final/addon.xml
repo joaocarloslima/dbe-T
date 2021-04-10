@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<addon>
+  <dependencies>
+    <dependency export="true" name="org.jboss.forge.addon:ui" optional="false" version="3.9.8.Final"/>
+    <dependency export="false" name="org.jboss.forge.furnace.container:simple" optional="false" version="2.28.5.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:scaffold-spi" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:projects" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:resources" optional="false" version="3.9.8.Final"/>
+  </dependencies>
+</addon>

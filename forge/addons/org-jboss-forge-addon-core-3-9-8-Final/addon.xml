@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<addon>
+  <dependencies>
+    <dependency export="true" name="org.jboss.forge.addon:ui" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:bean-validation" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-yaml" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-java" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:addons" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:configuration" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-xml" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:environment" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:facets" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:testing" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-json" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:dependencies" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:git" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:addon-manager" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:maven" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:dev-tools-java" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:javaee" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:convert" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:script" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:shell" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:scaffold-faces" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:scaffold" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:projects" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:text" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:resources" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:projects-generic" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:database-tools" optional="false" version="3.9.8.Final"/>
+  </dependencies>
+</addon>

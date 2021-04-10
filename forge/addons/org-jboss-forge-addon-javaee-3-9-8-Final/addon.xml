@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<addon>
+  <dependencies>
+    <dependency export="false" name="org.jboss.forge.addon:ui" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:rest-client" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:bean-validation" optional="false" version="3.9.8.Final"/>
+    <dependency export="false" name="org.jboss.forge.furnace.container:cdi" optional="false" version="2.28.5.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-java" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:javaee-spi" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:projects" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:text" optional="false" version="3.9.8.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:configuration" optional="false" version="3.9.8.Final"/>
+    <dependency export="true" name="org.jboss.forge.addon:parser-xml" optional="false" version="3.9.8.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:templates" optional="false" version="3.9.8.Final"/>
+  </dependencies>
+</addon>

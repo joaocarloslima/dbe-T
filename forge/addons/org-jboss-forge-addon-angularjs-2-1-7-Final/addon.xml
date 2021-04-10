@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<addon>
+  <dependencies>
+    <dependency export="false" name="org.jboss.forge.furnace.container:cdi" optional="false" version="2.23.5.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:scaffold-spi" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:parser-java" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:projects" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:text" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:javaee" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:convert" optional="false" version="3.2.3.Final"/>
+    <dependency export="false" name="org.jboss.forge.addon:templates" optional="false" version="3.2.3.Final"/>
+  </dependencies>
+</addon>
