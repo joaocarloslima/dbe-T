@@ -8,28 +8,32 @@
 
 <ui:composition template="_template.xhtml">
 	<ui:define name="content">
-		
+		<p:messages><p:autoUpdate /></p:messages>
 		<h:form>
 		<p:card class="form-card">
 		    <f:facet name="title">
 		       New Setup
 		    </f:facet>
 		   <div class="p-field p-grid">
-			    <label for="name" class="p-col-fixed" style="width:100px">Name</label>
+			    <h:outputLabel for="name" class="p-col-fixed" style="width:100px" value="Name" />
 			    <div class="p-col">
-			        <p:inputText id="name" value="#{setupBean.setup.name}" />
+			        <p:inputText id="name" value="#{setupBean.setup.name}" required="true" requiredMessage="O campo nome é obrigatório" />
 			    </div>
 			</div>
 			<div class="p-field p-grid">
 			    <label for="description" class="p-col-fixed" style="width:100px">Description</label>
 			    <div class="p-col">
-			        <p:inputTextarea id="description" value="#{setupBean.setup.description}"/>
+			        <p:inputTextarea id="description" value="#{setupBean.setup.description}" validatorMessage="O campo descriçao deve ter entre 10 e 255 car">
+			        	<f:validateLength minimum="10" maximum="255" />
+			        </p:inputTextarea>
 			    </div>
 			</div>
 			<div class="p-field p-grid">
 			    <label for="price" class="p-col-fixed" style="width:100px">Price</label>
 			    <div class="p-col">
-			        <p:inputText id="price" value="#{setupBean.setup.price}" />
+			        <p:inputText id="price" value="#{setupBean.setup.price}" converterMessage="Preço dever ser um número">
+			        	<f:validateDoubleRange minimum="0" />
+			        </p:inputText>
 			    </div>
 			</div>
 			
