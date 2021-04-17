@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<h:outputStylesheet name="style.css" library="css" />
+  	<title><ui:insert name="title">Progamer</ui:insert></title>
+</h:head>
+
+<body>
+
+<div id="header">
+    <ui:insert name="header">
+    	 <div class="card">
+		    <p:tabMenu activeIndex="#{param.i}">
+		        <p:menuitem value="Home" outcome="index.xhtml" icon="pi pi-fw pi-home">
+		            <f:param name="i" value="0"/>
+		        </p:menuitem>
+		        <p:menuitem value="Setup" outcome="setup.xhtml" icon="pi pi-fw pi-desktop">
+		            <f:param name="i" value="1"/>
+		        </p:menuitem>
+		        <p:menuitem value="Profile" outcome="index.html" icon="pi pi-fw pi-user">
+		            <f:param name="i" value="2"/>
+		        </p:menuitem>
+		    </p:tabMenu>
+		</div>
+    </ui:insert>
+</div>
+
+
+<div id="content">
+  <ui:insert name="content">
+  </ui:insert>
+</div>
+
+<div id="footer">
+  <ui:insert name="footer">
+  </ui:insert>
+</div>
+
+</body>
+
+</html>

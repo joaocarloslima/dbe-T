@@ -1,4 +1,4 @@
-package br.com.fiap;
+package br.com.fiap.bean;
 
 import javax.faces.bean.ManagedBean;
 

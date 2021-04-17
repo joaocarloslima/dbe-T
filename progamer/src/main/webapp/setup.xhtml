@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="content">
+		
+		<h:form>
+		<p:card class="form-card">
+		    <f:facet name="title">
+		       New Setup
+		    </f:facet>
+		   <div class="p-field p-grid">
+			    <label for="name" class="p-col-fixed" style="width:100px">Name</label>
+			    <div class="p-col">
+			        <p:inputText id="name" value="#{setupBean.setup.name}" />
+			    </div>
+			</div>
+			<div class="p-field p-grid">
+			    <label for="description" class="p-col-fixed" style="width:100px">Description</label>
+			    <div class="p-col">
+			        <p:inputTextarea id="description" value="#{setupBean.setup.description}"/>
+			    </div>
+			</div>
+			<div class="p-field p-grid">
+			    <label for="price" class="p-col-fixed" style="width:100px">Price</label>
+			    <div class="p-col">
+			        <p:inputText id="price" value="#{setupBean.setup.price}" />
+			    </div>
+			</div>
+			
+		    <f:facet name="footer">
+		        <p:commandButton icon="pi pi-check" value="Save" action="#{setupBean.save}"/>
+		        <p:commandButton icon="pi pi-times" value="Cancel" styleClass="ui-button-secondary" style="margin-left: .5em"/>
+		    </f:facet>
+		</p:card>
+		</h:form>
+		
+	</ui:define>
+</ui:composition>
+		
+		
+		
+		
+</html>
