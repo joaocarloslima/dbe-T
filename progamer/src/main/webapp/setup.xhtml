@@ -8,7 +8,7 @@
 
 <ui:composition template="_template.xhtml">
 	<ui:define name="content">
-		<p:messages><p:autoUpdate /></p:messages>
+		<p:messages id="messages"><p:autoUpdate /></p:messages>
 		<h:form>
 		<p:card class="form-card">
 		    <f:facet name="title">
@@ -17,7 +17,10 @@
 		   <div class="p-field p-grid">
 			    <h:outputLabel for="name" class="p-col-fixed" style="width:100px" value="Name" />
 			    <div class="p-col">
-			        <p:inputText id="name" value="#{setupBean.setup.name}" required="true" requiredMessage="O campo nome é obrigatório" />
+			        <p:inputText id="name" value="#{setupBean.setup.name}" required="true" requiredMessage="O campo nome é obrigatório">
+			        	<f:ajax event="blur" render="messages" />
+			        </p:inputText>
+			        
 			    </div>
 			</div>
 			<div class="p-field p-grid">
@@ -25,6 +28,7 @@
 			    <div class="p-col">
 			        <p:inputTextarea id="description" value="#{setupBean.setup.description}" validatorMessage="O campo descriçao deve ter entre 10 e 255 car">
 			        	<f:validateLength minimum="10" maximum="255" />
+			        	<f:ajax event="blur" render="messages" />
 			        </p:inputTextarea>
 			    </div>
 			</div>
@@ -33,16 +37,37 @@
 			    <div class="p-col">
 			        <p:inputText id="price" value="#{setupBean.setup.price}" converterMessage="Preço dever ser um número">
 			        	<f:validateDoubleRange minimum="0" />
+			        	<f:ajax event="blur" render="messages" />
 			        </p:inputText>
 			    </div>
 			</div>
 			
 		    <f:facet name="footer">
-		        <p:commandButton icon="pi pi-check" value="Save" action="#{setupBean.save}"/>
+		        <p:commandButton icon="pi pi-check" value="Save" action="#{setupBean.save}">
+		        	<f:ajax execute="@form" render="messages" />
+		        </p:commandButton>
 		        <p:commandButton icon="pi pi-times" value="Cancel" styleClass="ui-button-secondary" style="margin-left: .5em"/>
 		    </f:facet>
 		</p:card>
+		
+		<p:dataTable value="#{setupBean.setups}" var="setup">
+			<p:column headerText="Name">
+				<h:outputText value="#{setup.name}" />
+			</p:column>
+			<p:column headerText="Price">
+				<h:outputText value="#{setup.price}" />
+			</p:column>
+		</p:dataTable>
+		
+		
+		
+		
+		
+		
 		</h:form>
+		
+		
+		
 		
 	</ui:define>
 </ui:composition>

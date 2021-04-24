@@ -8,11 +8,64 @@
 
 <ui:composition template="_template.xhtml">
 	<ui:define name="content">
-		<h:form>
-			<h:outputLabel value="Test Server" />
-			<h:commandButton value="Execute" action="#{indexBean.execute}" />
-			<h:inputText />
-		</h:form>
+		<div class="card product">
+		    <h:form id="form">
+		        <p:dataView var="setup" 
+		        			value="#{setupBean.setups}" 
+		        			rows="5" 
+		        			paginator="true"
+		                    rowsPerPageTemplate="5,10"
+		                    paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+		                    gridIcon="pi pi-th-large" 
+		                    listIcon="pi pi-bars">
+		
+		            <p:dataViewGridItem>
+		                <div class="product-grid-item card border-1">
+		                    <div class="product-grid-item-top">
+		                        <div>
+		                            <i class="pi pi-tag product-category-icon"/>
+		                            <span class="product-category">#{product.category}</span>
+		                        </div>
+		                        <span class="product-badge status-#{product.inventoryStatus.name().toLowerCase()}">#{product.inventoryStatus.text}</span>
+		                    </div>
+		                    <div class="product-grid-item-content">
+		                        <p:graphicImage name="images/product/#{product.image}" library="demo"/>
+		                        <div class="product-name">#{product.name}</div>
+		                        <div class="product-description">#{product.description}</div>
+		                        <p:rating readonly="true" value="#{product.rating}"/>
+		                    </div>
+		                    <div class="product-grid-item-bottom">
+		                        <h:outputText value="#{product.price}" styleClass="product-price">
+		                            <f:convertNumber currencySymbol="$" type="currency"/>
+		                        </h:outputText>
+		                        <p:commandButton type="button"
+		                                            value="Add To Cart"
+		                                            icon="pi pi-shopping-cart"
+		                                            disabled="#{product.inventoryStatus == 'OUTOFSTOCK'}">
+		                        </p:commandButton>
+		                    </div>
+		                </div>
+		            </p:dataViewGridItem>
+		
+		            <p:dataViewListItem>
+		                <div class="setup-list-item">
+		                    <p:graphicImage name="demo/images/product/"/>
+		                    <div class="setup-list-detail">
+		                        <div class="setup-name">#{setup.name}</div>
+		                        <div class="setup-description">#{setup.description}</div>
+		                        <p:rating value="0"/>
+		                    </div>
+		                    <div class="setup-list-action">
+		                        <h:outputText value="#{setup.price}" styleClass="setup-price">
+		                            <f:convertNumber currencySymbol="R$" type="currency"/>
+		                        </h:outputText>
+		                        <p:commandButton type="button" value="Detail" icon="pi pi-search" />
+		                    </div>
+		                </div>
+		            </p:dataViewListItem>
+		        </p:dataView>
+		    </h:form>
+		</div>
 	</ui:define>
 </ui:composition>
 
