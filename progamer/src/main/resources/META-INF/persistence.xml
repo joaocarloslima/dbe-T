@@ -4,6 +4,7 @@
     <description>Forge Persistence Unit</description>
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>br.com.fiap.model.Setup</class>
+    <class>br.com.fiap.model.User</class>
     
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
