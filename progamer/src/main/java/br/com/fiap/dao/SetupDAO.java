@@ -26,6 +26,23 @@ public class SetupDAO {
 		TypedQuery<Setup> query = manager.createQuery(jpql, Setup.class);
 		return query.getResultList();		
 	}
+
+	public Setup findById(Long id) {
+		EntityManager manager = JPAUtil.getEntityManager();
+		return manager.find(Setup.class, id);
+		
+	}
+
+	public void update(Setup setup) {
+		EntityManager manager = JPAUtil.getEntityManager();
+		manager.getTransaction().begin();
+		manager.merge(setup);
+		manager.flush();
+		manager.getTransaction().commit();
+		
+		manager.close();
+		
+	}
 	
 	
 	
