@@ -14,7 +14,12 @@
 
 <div id="header">
     <ui:insert name="header">
-    	 <div class="card">
+    	<h:form>
+	    	<h:commandLink action="#{userBean.logout}">
+	    		logout
+	    	</h:commandLink>
+    	</h:form>
+	    <div class="card">
 		    <p:tabMenu activeIndex="#{param.i}">
 		        <p:menuitem value="Home" outcome="index.xhtml" icon="pi pi-fw pi-home">
 		            <f:param name="i" value="0"/>

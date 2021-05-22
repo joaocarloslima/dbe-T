@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="header"></ui:define>
+
+	<ui:define name="content">
+		<p:messages id="messages"><p:autoUpdate /></p:messages>
+		<h:form>
+		<p:card class="form-card">
+		    <f:facet name="title">
+		       Login
+		    </f:facet>
+		   <div class="p-field p-grid">
+			   
+			    <h:outputLabel for="email" class="p-col-fixed" style="width:100px" value="E-mail" />
+			    <div class="p-col">
+			        <p:inputText 
+			        			id="email" 
+			        			value="#{userBean.user.email}" 
+			        			required="true" 
+			        			requiredMessage="O campo email é obrigatório"
+			        			validatorMessage="E-mail inválido"
+			        			>
+			        	<f:ajax event="blur" render="messages" />
+			        	<f:validateRegex pattern="^[a-z0-9_.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$" />
+			        </p:inputText>
+			    </div>
+
+				<p:outputLabel for="password" class="p-col-fixed" style="width:100px" value="Password" />
+			    <div class="p-col">
+			        <p:password 
+			        			id="password" 
+			        			value="#{userBean.user.password}" 
+			        			required="true" 
+			        			requiredMessage="O campo senha é obrigatório"
+			        			toggleMask="true"
+			        			>
+			        	<f:ajax event="blur" render="messages" />
+			        	<f:validateLength minimum="2" />
+			        </p:password>
+			    </div>
+
+			    
+			</div>
+			
+			
+		    <f:facet name="footer">
+		        <p:commandButton icon="pi pi-check" value="Login" action="#{userBean.login}" />
+		    </f:facet>
+		</p:card>
+		
+		</h:form>
+		
+		
+		
+		
+	</ui:define>
+</ui:composition>
+		
+		
+		
+		
+</html>
